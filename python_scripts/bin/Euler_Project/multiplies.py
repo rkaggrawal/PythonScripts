@@ -1,4 +1,6 @@
 #!/usr/bin/python
+
+#adding this line for test
 import time
 # sum=0
 # for num in range(1,1000):
@@ -30,14 +32,14 @@ def triangle_number(num):
 
 
 t0 = time.time()
-for n in range(1,10001):
+for n in range(1,100):
     total = triangle_number(n)
     print "Traingle of {} is {}".format(n, total)
     list=[]
     for t in range(1, total+1):
         if total%t == 0:
             list.append(t)
-    if len(list) >= 200:
+    if len(list) >= 20:
         print "{} are total factor of {} => {}".format(len(list),total,list)
         t1 = time.time()
         print 'Time for execution: {}'.format(t1 - t0)
