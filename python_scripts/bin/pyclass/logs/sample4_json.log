@@ -1,0 +1,9 @@
+2017-04-05 14:37:47,214 | root | DEBUG | Add: 10 + 0 = 10
+2017-04-05 14:37:47,217 | root | DEBUG | Sub: 10 - 0 = 10
+2017-04-05 14:37:47,217 | root | DEBUG | Mul: 10 * 0 = 0
+2017-04-05 14:37:47,217 | root | ERROR | Error is: integer division or modulo by zero
+Traceback (most recent call last):
+  File "/home/rahul/pyclass/sample4_json.py", line 60, in divide
+    result =  x / y
+ZeroDivisionError: integer division or modulo by zero
+2017-04-05 14:37:47,222 | root | DEBUG | Div: 10 / 0 = None

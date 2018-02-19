@@ -1,0 +1,100 @@
+#!/usr/bin/python
+
+class Node(object):
+    def __init__(self, data=None, next = None):
+        self.data = data
+        self.next = next
+
+class LinkedList(object):
+    def __init__(self):
+        self.head = Node()
+        # self.items = []
+        # print self.head
+
+    def insertLast(self, data):
+        cur_node = self.head
+        # print cur_node.next
+        while cur_node.next != None:
+            # print "I am in while"
+            cur_node = cur_node.next
+        new_node = Node(data)
+        cur_node.next = new_node
+        # self.items.append(cur_node.data)
+        # print self.items
+
+    def insertFirst(self, data):
+        cur_node = self.head
+        new_node = Node(data,cur_node.next)
+        cur_node.next = new_node
+
+    def insertBefore(self, data, item):
+        # new_node = Node(data,self.head.next)
+        cur_node = self.head
+        # cur_node.next = new_node
+        while cur_node.next != None:
+            last_node = cur_node
+            cur_node = cur_node.next
+            if cur_node.data == item:
+                new_node = Node(data, last_node.next)
+                last_node.next = new_node
+                return
+
+    def insertAfter(self, data, item):
+        # new_node = Node(data,self.head.next)
+        cur_node = self.head
+        # cur_node.next = new_node
+        while cur_node.next != None:
+            # last_node = cur_node
+            cur_node = cur_node.next
+            if cur_node.data == item:
+                new_node = Node(data, cur_node.next)
+                cur_node.next = new_node
+
+    def display(self):
+        elems = []
+        cur_node = self.head
+        while cur_node.next != None:
+            cur_node = cur_node.next
+            # print cur_node.data
+            elems.append(cur_node.data)
+        print elems
+
+    def remove(self, item):
+        cur_node = self.head
+        while True:
+            last_node = cur_node
+            cur_node = cur_node.next
+            # print cur_node.data
+            if cur_node.data == item:
+                last_node.next = cur_node.next
+                return
+    def search(self, item):
+        cur_node = self.head
+        while cur_node.next != None:
+            cur_node = cur_node.next
+            if cur_node.data == item:
+                return True
+        else:
+            return False
+
+linkdeslist = LinkedList()
+# linkdeslist.display()
+linkdeslist.insertLast(1)
+linkdeslist.insertLast('two')
+linkdeslist.insertLast(3)
+linkdeslist.insertLast('four')
+linkdeslist.insertFirst(5)
+linkdeslist.insertBefore(6, 'two')
+linkdeslist.insertBefore(7, 'four')
+linkdeslist.insertAfter(8, 6)
+
+
+linkdeslist.display()
+linkdeslist.remove(3)
+linkdeslist.display()
+
+
+if linkdeslist.search('four'):
+    print 'Found data'
+else:
+    print "Data not found"

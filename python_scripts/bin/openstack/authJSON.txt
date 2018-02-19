@@ -1,0 +1,1 @@
+{"auth": {"tenantName": "admin", "passwordCredentials": {"username": "admin", "password": "vrp@123"}}}

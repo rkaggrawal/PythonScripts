@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+#print "Enter a number between 1 and 3"
+var=raw_input("Enter a number between 1 and 3:\n")
+
+#print "Value is",var
+
+if var == "1":
+	print "Entered value is:",var
+elif var == "2":
+	print "Entered value is:",var
+elif var == "3":
+	print "Entered value is:",var
+else:
+	print "Entered valus is not between 1-3"
+

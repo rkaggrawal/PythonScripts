@@ -1,0 +1,6 @@
+{
+  "test_cube_1.py::TestCube::test_2": true, 
+  "test_cube_1.py::TestCube::test_3": true, 
+  "test_cube_1.py::TestPyCube::()::test_2": true, 
+  "test_cube_1.py::TestPyCube::()::test_3": true
+}

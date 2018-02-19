@@ -1,0 +1,12 @@
+>>> from square1 import square
+>>> square(1)
+1
+>>> square(2)
+4
+>>> square()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: square() takes exactly 1 argument (0 given)
+
+
+#python -m doctest -v tests.txt
