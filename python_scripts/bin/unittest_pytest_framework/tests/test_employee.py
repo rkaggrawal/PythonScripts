@@ -1,24 +1,25 @@
 #!/usr/bin/python
 
+from __future__ import absolute_import
 import unittest
 from bin.unittest_pytest_framework.employee import Employee
 
 class TestEmployee(unittest.TestCase):
 
     @classmethod
-    def setUpClass(cls):
-        print 'setUpClass'
+    def setUpClass(cls): #Execute once before start of entire test suit
+        print 'setUpClass\n'
 
     @classmethod
-    def tearDownClass(cls):
+    def tearDownClass(cls): #Execute once after end of entire test suit
         print 'tearDownClass'
 
-    def setUp(self): #Runs before each teat case
+    def setUp(self): #Execute before each teat case
         print 'setUp'
         self.emp_1 = Employee('Rajat', 'Mathur', 50000)
         self.emp_2 = Employee('Aman', 'Verma', 60000)
 
-    def tearDown(self): #Runs after each test case
+    def tearDown(self): #Execute after each test case
         print 'tearDown'
 
     def test_email(self):
