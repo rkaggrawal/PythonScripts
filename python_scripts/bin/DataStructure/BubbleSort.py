@@ -6,7 +6,7 @@ def bubble_sort(lst):
             # print a[j],a[j]
             if lst[j] > lst[j+1]:
                 lst[j], lst[j+1] = lst[j+1], lst[j]
-        print lst
+        # print lst
 
     return lst
 

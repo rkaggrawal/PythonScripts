@@ -102,3 +102,8 @@ del dict2
 
 print "\n\n"
 print dir(dict)
+
+d = {"name":"rahul"}
+print (d.setdefault("lname", "aggrawal"))
+print(d)
+

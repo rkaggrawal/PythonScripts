@@ -75,18 +75,18 @@
 # ele = 1
 # for row_num in range(row):
 #     # ele = 1
-#     for col_num in range(row_num):
+#     for col_num in range(row_num+1):
 #         print ele,
 #         ele += 1
 #     print ""
 
-# Number = 139
-# Reverse = 0
-# while(Number > 0):
-#  Reminder = Number %10
-#  Reverse = (Reverse *10) + Reminder
-#  Number = Number //10
-# print("\n Reverse of entered number is = %d" %Reverse)
+Number = 139
+Reverse = 0
+while(Number > 0):
+ Reminder = Number %10
+ Reverse = (Reverse *10) + Reminder
+ Number = Number //10
+print("\n Reverse of entered number is = %d" %Reverse)
 
-fp = open('myfile.txt', 'a+')
-fp.close()
+# fp = open('myfile.txt', 'a+')
+# fp.close()

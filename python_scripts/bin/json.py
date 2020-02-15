@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #import demjson
-#import simplejson as json
+import simplejson as json
 
 data = [ { 'a' : 1, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ]
 

@@ -7,7 +7,7 @@ fibonacci_cache = {}
 
 def fibonacci(n):
     if type(n) != int:
-        raise ValueError('Give positive nunber')
+        raise ValueError('Give integer nunber')
     if n < 0:
         raise ValueError('Give positive nunber')
 
