@@ -1,0 +1,3 @@
+1001    vijay    lucknow    150000.00
+1002    rajveer  jaipur     8787.45
+1002    rajveer  raipur     9888.5

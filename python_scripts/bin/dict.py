@@ -61,7 +61,7 @@ print "vowel dict is: %s" % str(vowel)
 
 print "\n\n"
 ##dict.items()
-#The method items() returns a list of dict's (key, value) tuple pairs
+#The method items() returns a list of tuple pairs
 print "dict.items() : ",dict.items()
 print "dict.iteritems() : ", dict.iteritems()
 print "dict.iteritems() : ",[x for x in dict.iteritems()]

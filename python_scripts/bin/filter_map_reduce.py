@@ -1,4 +1,4 @@
-#!/usr/bin/python
+from __future__ import print_function
 
 #filter is used to check the test of value and returns if its True. In our case only those values will be returned which are divisible by 5
 #The function filter(function, list) offers an elegant way to filter out all the elements of a list, for which the function function returns True. 

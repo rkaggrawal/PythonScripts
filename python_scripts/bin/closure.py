@@ -11,14 +11,15 @@ def func1(msg):
     func2()
 
 func1("Hello")
-
-##When top function(enclose) returns inner function(nested) is called as Closure in python.
-##When Do We Have a Closure?
-##	As seen from the below example, we have a closure in Python when a nested function references a value in its enclosing scope. The criteria that must be met to create closure in Python are summarized in the following points.
+'''
+When top function(enclose) returns inner function(nested) is called as Closure in python.
+When Do We Have a Closure?
+As seen from the below example, we have a closure in Python when a nested function references a value in its enclosing scope. 
+The criteria that must be met to create closure in Python are summarized in the following points.
 ##		We must have a nested function (function inside a function).
 ##		The nested function must refer to a value defined in the enclosing function.
 ##		The enclosing function must return the nested function. 
-
+'''
 ##Closure ex1
 def func1(msg):
     '''this is my first func1'''
