@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 def insertion_sort(lst):
+    print('{}-org'.format(lst))
     for i in range(1, len(lst)):
         key = lst[i]
         for j in range(i, 0, -1):

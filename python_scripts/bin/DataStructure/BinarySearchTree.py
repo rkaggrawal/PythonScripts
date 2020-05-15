@@ -43,8 +43,8 @@ class Node:
 
 
 
-
-bst = Node(8)
+print("Data in Binary Search Tree:")
+bst = Node()
 bst.insert(3)
 bst.insert(10)
 bst.insert(1)
